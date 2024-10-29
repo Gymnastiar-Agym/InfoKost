@@ -16,4 +16,15 @@ public class KostManager {
             System.out.println("Harga tidak valid!");
         }
     }
+
+    /**
+     * Mengubah status ketersediaan kost.
+     *
+     * @param kost     objek KostInfo yang status ketersediaannya akan diubah
+     * @param tersedia status ketersediaan baru
+     */
+    public void setTersedia(KostInfo kost, boolean tersedia) {
+        kost.setTersedia(tersedia);
+        System.out.println("Status ketersediaan untuk Kost " + kost.getNama() + ": " + (tersedia ? "Ya" : "Tidak"));
+    }
 }
